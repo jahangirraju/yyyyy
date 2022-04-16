@@ -1,0 +1,292 @@
+:root {
+    --color-primary: rgb(116, 116, 152);
+    --color-white: #fff;
+    --color-black: #000;
+    --badge-info: rgb(174, 174, 22);
+    --badge-warning: rgb(174, 174, 22);
+
+}
+
+
+/* normalize css */
+html,
+body {
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #fff;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.5s all;
+}
+
+.btn-outline {
+    background: var(--color-primary) !important;
+    border: var(--color-primary) !important;
+    color: var(--color-primary);
+}
+
+.btn-outline:hover {
+    background: var(--color-primary) !important;
+    border: var(--color-primary) !important;
+    color: var(--color-white);
+}
+
+.btn-active {
+    border-bottom: 2px solid red;
+}
+
+.contener-padding {
+    padding: 40px 100px;
+}
+
+/* badge */
+.badge {
+    background-color: var(--color-primary);
+    padding: 6px 10px;
+    border-radius: 20px;
+    color: var(--color-white);
+    font-size: 0.8rem;
+    margin-right: 2px;
+}
+
+.badge-info {
+    color: var(--badge-info);
+}
+
+.badge-black {
+    color: var(--color-black);
+}
+
+.badge-warning {
+    color: var(--badge-warning);
+}
+
+/* navbar css */
+
+.navbar {
+    background-color: blue;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.nav-inner {
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left img {
+    width: 70px;
+}
+
+.navbar-right ul {
+    list-style: none;
+}
+
+.navbar-right ul li {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.navbar-right .btn-portfolios {
+    position: relative;
+}
+
+.navbar-right .btn-portfolios span {
+    position: absolute;
+    background-color: red;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    right: -4px;
+    top: -5px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* header banner */
+.header-banner {
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    /* position: absolute; */
+    color: aqua;
+    bottom: 0px;
+    text-align: center;
+    left: 20%;
+    right: 20%;
+}
+
+
+.header-text h2 {
+    font-size: 5rem;
+    color: seagreen;
+}
+
+.header-social a {
+    font-size: 0.8rem;
+    padding: 7px 16px;
+    border-radius: 33%;
+    color: #000;
+}
+
+.header-social a.facebook {
+    background-color: blue;
+}
+
+.header-social a.twitter {
+    background-color: peru;
+}
+
+.header-social a.youtube {
+    background-color: red;
+}
+
+.header-profile img {
+    min-width: 400px;
+    max-width: 100%;
+}
+
+/* content */
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* portfolios */
+.portfolios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio img {
+    width: 90%;
+    height: 200px;
+}
+
+
+.portfolio {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: .4s all;
+}
+
+.portfolio:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* contact css */
+#contact-me {
+    background-image: url(circle-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3rem;
+}
+
+.contact-box {
+    display: flex;
+}
+
+.contact-box>*:nth-child(1) {
+    flex-basis: 60%;
+    margin: 0 auto;
+    padding: 40px 100px;
+}
+
+.contact-box>*:nth-child(2) {
+    flex-basis: 40%;
+    margin: 0 auto;
+}
+
+.contact-box .form-group {
+    margin-bottom: 20px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #fff;
+    margin: 10px;
+    transition: 0.5s all;
+}
+
+.input:hover,
+.input:focus {
+    border: var(--color-black);
+    outline: none;
+}
+
+/* footer css */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.aj-image img {
+    width: 60px;
+}
+
+.footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    color: var(--color-white);
+}
+
+.footer .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-top >div {
+    flex: 0 0 33.3%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-top ul {
+    list-style: none;
+}
+ .footer-top ul li {
+     padding: 15px;
+ }
+
+ .footer-top a {
+     color: aqua;
+ }
+
+ .footer-bottom .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+ }
